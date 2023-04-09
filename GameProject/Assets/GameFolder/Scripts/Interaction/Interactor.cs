@@ -11,6 +11,14 @@ public class Interactor : MonoBehaviour
     [SerializeField] private int numFound;
 
     private IInteractable _interactable;
+
+    CameraZoom cameraZoom;
+
+    void Start()
+    {
+        cameraZoom = FindObjectOfType<CameraZoom>();
+    }
+
     private void Update()
     {
         numFound = Physics.OverlapSphereNonAlloc(interactionPoint.position, interactionPointRadius, colliders, interactableMask); 
@@ -23,7 +31,11 @@ public class Interactor : MonoBehaviour
             {
                 if (!interactionPromptUI.isDisplayed) interactionPromptUI.SetUp(_interactable.InteractionPrompt);
 
-                if (Input.GetKeyDown(KeyCode.E)) _interactable.Interact(this);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    _interactable.Interact(this);
+                    cameraZoom.Zoom();
+                }
             }
         }
         else
