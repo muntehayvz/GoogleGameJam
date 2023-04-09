@@ -16,8 +16,16 @@ public class ScoreManager : MonoBehaviour
 
     private void Awake()
     {
+        if(Instance && Instance != this)
+        {
+            // Destroy myself
+            Destroy(gameObject);
+            return;
+        }
+
+        // Otherwise store my reference and make me DontDestroyOnLoad
         Instance = this;
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
     }
     private void Update()
     {
@@ -33,7 +41,6 @@ public class ScoreManager : MonoBehaviour
     }
     public void UpdateScoreDisplay()
     {
-        scoreText.text = string.Format("Score: {0:0000}", displayScore);
-        Debug.Log(Score);
+        scoreText.text = string.Format("Score: {0:0}", displayScore);
     }
 }
