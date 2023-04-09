@@ -29,6 +29,17 @@ public class CameraZoom : MonoBehaviour
         }
     }
 
+    public void TabletZoom()
+    {
+        if (cAnimator != null)
+        {
+            cAnimator.SetTrigger("tabletZoom");
+           
+            Invoke("LoadQuizGame", delay);
+
+        }
+    }
+
     IEnumerator WaitForFunction(float delayTime)
     {
         yield return new WaitForSeconds(delayTime);
@@ -38,7 +49,11 @@ public class CameraZoom : MonoBehaviour
     void  LoadLevelAfterDelay()
     {
         Loader.Load(Loader.Scene.SecondScene);
-        Debug.Log("New Scene");
+    }
+
+    void LoadQuizGame()
+    {
+        Loader.Load(Loader.Scene.OmrExampleScene);
     }
 
 }
