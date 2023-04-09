@@ -11,6 +11,7 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
     [SerializeField] Camera mainCamera;
+    int scorePerWord = 10;
 
     public TMP_Text questionText;
 
@@ -42,6 +43,7 @@ public class QuizManager : MonoBehaviour
     public void Correct()
     {
         QnA.RemoveAt(currentQuestion);
+        ScoreManager.Instance.IncreaseScore(scorePerWord);
         Invoke("GenerateQuestions", 2f);
        
     }
