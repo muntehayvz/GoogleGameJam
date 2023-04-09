@@ -14,11 +14,14 @@ public class Countdown : MonoBehaviour
 
     [SerializeField] private float _duration;
 
+    private float delay = 2f;
+
     void Start()
     {
         _currentTime = _duration;
         _timerText.text = _currentTime.ToString();
         StartCoroutine(UpdateTime());
+
     }
 
     private IEnumerator UpdateTime()
@@ -31,6 +34,11 @@ public class Countdown : MonoBehaviour
             _currentTime--;
         }
         _timerText.text = ("Time Up");
+        Invoke("TimesUpDelay", delay);
         yield return null;
+    }
+    void TimesUpDelay()
+    {
+        Loader.Load(Loader.Scene.SampleScene);
     }
 }

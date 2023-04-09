@@ -7,7 +7,7 @@ public class WordBank : MonoBehaviour
 {
     private List<string> originalWords = new List<string>()
     {
-        "private", "string" , "printf" , "Start" , "string" , "empty" , "Update", "Congrats!"
+        "private", "float", "playerheight", "void", "movedir", "if", "vector", "deltatime", "return", "update", "else", "iswalking", "slerp", "normalized", "enable", "awake", "class", "input", "true", "keycode", "getkey", "audiosource", "public", "using", "false", "const", "animator", "setbool", "string", "debug", "raycast", "spriteatlas", "cinematics", "walkable", "fbx", "spotlight", "import", "texture", "fixedupdate", "layer", "textmeshpro", "tilemap", "render",  "console", "hierarchy", "layout", "assetstore", "parameters"
 };
 
     private List<string> workingWords = new List<string>();

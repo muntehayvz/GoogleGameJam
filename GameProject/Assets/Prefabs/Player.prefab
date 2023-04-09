@@ -199,6 +199,9 @@ MonoBehaviour:
     m_Bits: 64
   interactionPromptUI: {fileID: 263685218159309023}
   numFound: 0
+  source: {fileID: 0}
+  pcSound: {fileID: 8300000, guid: 2d18850466dcfcc40bc90f74b913a3c3, type: 3}
+  tabletSound: {fileID: 8300000, guid: dbae1d7a3619dc942b384ce583d4ece3, type: 3}
 --- !u!82 &1883326777
 AudioSource:
   m_ObjectHideFlags: 0
@@ -206,7 +209,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263685217929377922}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3eec47034c24e1440837a063d5e051ca, type: 3}

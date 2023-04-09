@@ -7,12 +7,16 @@ using UnityEngine.UI;
 
 public class Typer : MonoBehaviour
 {
-    [SerializeField] private WordBank wordBank = null;
-    [SerializeField] private TextMeshProUGUI wordOutput = null;
+    public WordBank wordBank = null;
+    public TMP_Text wordOutput = null;
 
     private string remainingWord = string.Empty;
     private string currentWord = string.Empty;
 
+    int scorePerLetter = 1;
+
+    public AudioSource source;
+    public AudioClip keyboardSound;
 
     private void Start()
     {
@@ -22,13 +26,14 @@ public class Typer : MonoBehaviour
     private void SetCurrentWord()
     {
         currentWord = wordBank.GetWord();
-        SetRemainingWord(currentWord);
+        SetRemainingWord(currentWord, currentWord);
+
     }
 
-    private void SetRemainingWord(string newString)
+    private void SetRemainingWord(string newString, string visualString)
     {
         remainingWord = newString;
-        wordOutput.text = remainingWord;
+        wordOutput.text = visualString;
 
     }
 
@@ -57,6 +62,9 @@ public class Typer : MonoBehaviour
         {
             RemoveLetter();
 
+            source.PlayOneShot(keyboardSound);
+            ScoreManager.Instance.IncreaseScore(scorePerLetter);
+
             if (IsWordCompelete())
                 SetCurrentWord();
 
@@ -73,7 +81,8 @@ public class Typer : MonoBehaviour
     private void RemoveLetter()
     {
         string newString = remainingWord.Remove(0, 1);
-        SetRemainingWord(newString);
+        string coloredstring = $"<color=green>{newString}</color>";
+        SetRemainingWord(newString, coloredstring);
 
     }
 
