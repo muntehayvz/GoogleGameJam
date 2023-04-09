@@ -45,13 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - Question: "Se\xE7eneklerde verilen fonksiyonlar\u0131n hangisinin \xF6nceli\u011Fi
-      daha fazlad\u0131r?"
+  - Question: "Seceneklerde verilen fonksiyonlar\u0131n hangisinin onceligi daha
+      fazlad\u0131r?"
     Answers:
     - Awake
     - Start
     - Update
-    - FixedUpdat
+    - FixedUpdate
     correctAnswer: 1
   - Question: C# dilinde '&&' neyi ifade eder?
     Answers:
@@ -60,8 +60,7 @@ MonoBehaviour:
     - ve
     - ise
     correctAnswer: 3
-  - Question: "Se\xE7eneklerden hangi unity \u0131\u015F\u0131k t\xFCrlerinden biri
-      de\u011Fildir?"
+  - Question: "Se\xE7eneklerden hangi unity \u0131s\u0131k turlerinden biri degildir?"
     Answers:
     - Point Light
     - Area Light
