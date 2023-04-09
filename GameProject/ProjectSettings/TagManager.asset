@@ -12,8 +12,8 @@ TagManager:
   - Water
   - UI
   - Interactable
-  - 
-  - 
+  - QuizUI
+  - ScoreUI
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 2808912695
+    locked: 0
+  - name: ScoreUI
+    uniqueID: 1905336235
     locked: 0
