@@ -34,7 +34,7 @@ public class Player : MonoBehaviour{
         float interactDistance = 2f;
         if (Physics.Raycast(transform.position, lastInteractDir, out RaycastHit raycastHit, interactDistance))
         {
-            Debug.Log(raycastHit.transform);
+            //Debug.Log(raycastHit.transform);
         }else
         {
 
