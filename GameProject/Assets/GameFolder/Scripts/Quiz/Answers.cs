@@ -17,13 +17,17 @@ public class Answers : MonoBehaviour
 
     public void Answer()
     {
-        if (isCorrect )
+        if (isCorrect)
         {
+            GetComponent<Image>().color = Color.green;
             quizManager.Correct();
+            FunctionTimer.Create(() => GetComponent<Image>().color = new Color(0, 0, 0, 0), 2f);
         }
         else
         {
+            GetComponent<Image>().color = Color.red;
             quizManager.Wrong();
+            FunctionTimer.Create(() => GetComponent<Image>().color = new Color(0, 0, 0, 0), 2f);
         }
     }
 }

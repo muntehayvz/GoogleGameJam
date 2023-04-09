@@ -9,7 +9,6 @@ public class QuizManager : MonoBehaviour
 {
     public List<QuestionAndAnswers> QnA;
     public GameObject[] options;
-    public Button[] buttons;
     public int currentQuestion;
     [SerializeField] Camera mainCamera;
 
@@ -20,7 +19,7 @@ public class QuizManager : MonoBehaviour
         mainCamera = Camera.main;
         GenerateQuestions();
     }
-    public IEnumerator SetAnswers()
+    public void  SetAnswers()
     {
         for (int i = 0; i < options.Length; i++)
         {
@@ -29,44 +28,46 @@ public class QuizManager : MonoBehaviour
 
             if (QnA[currentQuestion].correctAnswer == i + 1)
             {
-                if(Input.GetMouseButtonDown(0))
-                {
                     options[i].GetComponent<Answers>().isCorrect = true;
-                    options[i].GetComponent<Image>().color = new Color(0, 255, 0, 1f);
-                    yield return new WaitForSeconds(5f);
-                    options[i].GetComponent<Image>().color = new Color(0, 0, 0, 0);
-                }
+                   // options[i].GetComponent<Image>().color = new Color(0, 255, 0, 1f);
             }
-            else
+            else 
             {
-                if (Input.GetMouseButtonDown(0))
-                { 
-                    options[i].GetComponent<Answers>().isCorrect = false;
-                    options[i].GetComponent<Image>().color = new Color(255, 0, 0, 1f);
-                    yield return new WaitForSeconds(5f);
-                    options[i].GetComponent<Image>().color = new Color(0, 0, 0, 0);
-                }
+                options[i].GetComponent<Answers>().isCorrect = false;
+                //options[i].GetComponent<Image>().color = new Color(255, 0, 0, 1f);
             }
         }
     }
     public void Correct()
     {
         QnA.RemoveAt(currentQuestion);
-        GenerateQuestions();
+        Invoke("GenerateQuestions", 2f);
+       
     }
     public void Wrong()
     {
         //Trigger particle - cevap yanlýþ 
         QnA.RemoveAt(currentQuestion);
-        GenerateQuestions();
+        Invoke("GenerateQuestions", 2f);
     }
 
     private void GenerateQuestions()
     {
-        currentQuestion = Random.Range(0, QnA.Count);
+        if(QnA.Count > 0)
+        {
+            currentQuestion = Random.Range(0, QnA.Count);
 
-        questionText.text = QnA[currentQuestion].Question;
-        StartCoroutine(SetAnswers());
+            questionText.text = QnA[currentQuestion].Question;
+            SetAnswers();
+        }
+        else
+        {
+            Debug.Log("Out of Questions");
+        }
+    }
+    void SetColorToDefault()
+    {
+
     }
 }
 
