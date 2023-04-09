@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondScene.unity
     guid: c7e0491ad3c3fac40aecc52c391e6bbe
+  - enabled: 1
+    path: Assets/Scenes/OmrExampleScene.unity
+    guid: e7dd552f77e22a64a9163bc887978190
   m_configObjects: {}

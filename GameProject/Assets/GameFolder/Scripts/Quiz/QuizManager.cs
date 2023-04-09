@@ -36,6 +36,7 @@ public class QuizManager : MonoBehaviour
                 options[i].GetComponent<Answers>().isCorrect = false;
                 //options[i].GetComponent<Image>().color = new Color(255, 0, 0, 1f);
             }
+            
         }
     }
     public void Correct()
@@ -63,6 +64,7 @@ public class QuizManager : MonoBehaviour
         else
         {
             Debug.Log("Out of Questions");
+            Loader.Load(Loader.Scene.SampleScene);
         }
     }
     void SetColorToDefault()
