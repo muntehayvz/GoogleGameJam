@@ -37,7 +37,7 @@ public class Player : MonoBehaviour{
             Debug.Log(raycastHit.transform);
         }else
         {
-            Debug.Log("-");
+
         }
     }
     private void HandleMovement()
