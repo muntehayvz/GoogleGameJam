@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17340532, g: 0.21676357, b: 0.29883647, a: 1}
+  m_IndirectSpecularColor: {r: 0.1734049, g: 0.2167629, b: 0.29883552, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1019,6 +1019,16 @@ PrefabInstance:
       objectReference: {fileID: 1238181836}
     - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
         type: 3}
+      propertyPath: QnA.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: options.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
       propertyPath: options.Array.data[0]
       value: 
       objectReference: {fileID: 415879093}
@@ -1037,6 +1047,200 @@ PrefabInstance:
       propertyPath: options.Array.data[3]
       value: 
       objectReference: {fileID: 17699493}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: options.Array.data[4]
+      value: 
+      objectReference: {fileID: 17699493}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: options.Array.data[5]
+      value: 
+      objectReference: {fileID: 17699493}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: options.Array.data[6]
+      value: 
+      objectReference: {fileID: 17699493}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[3].Question
+      value: "D\xFC\u015F\xFCk performansl\u0131 cihazlar i\xE7in hangi render pipeline'\u0131
+        kullanmak daha do\u011Frudur?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[4].Question
+      value: "Materyal'in p\xFCr\xFCzs\xFCzl\xFC\u011F\xFCn\xFC artt\u0131rmak i\xE7in
+        hangi de\u011Feri artt\u0131r\u0131lmal\u0131d\u0131r ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[5].Question
+      value: "Bir fonksiyonu belirli bir s\xFCre sonra \xE7a\u011F\u0131rmak i\xE7in
+        gerekli anahtar kelime nedir?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[6].Question
+      value: "Se\xE7eneklerde yer alan kodlardan hangisi klavyeden herhangi bir input
+        almaz?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[7].Question
+      value: "Class'lar\u0131n i\xE7inde hangi yap\u0131lar olamaz?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[3].correctAnswer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[4].correctAnswer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[5].correctAnswer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[6].correctAnswer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[7].correctAnswer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[3].Answers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[4].Answers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[5].Answers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[6].Answers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[7].Answers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[3].Answers.Array.data[0]
+      value: ASP
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[3].Answers.Array.data[1]
+      value: URP
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[3].Answers.Array.data[2]
+      value: HDRP
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[3].Answers.Array.data[3]
+      value: UPR
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[4].Answers.Array.data[0]
+      value: Smoothness
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[4].Answers.Array.data[1]
+      value: Tiling
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[4].Answers.Array.data[2]
+      value: Opaque
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[4].Answers.Array.data[3]
+      value: Metallic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[5].Answers.Array.data[0]
+      value: protected
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[5].Answers.Array.data[1]
+      value: void
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[5].Answers.Array.data[2]
+      value: Invoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[5].Answers.Array.data[3]
+      value: enum
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[6].Answers.Array.data[0]
+      value: Input.GetKey(space)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[6].Answers.Array.data[1]
+      value: Input.GetKeyDown(w)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[6].Answers.Array.data[2]
+      value: Input.GetTouch()
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[6].Answers.Array.data[3]
+      value: Input.GetAxis("Horizontal")
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[7].Answers.Array.data[0]
+      value: variables
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[7].Answers.Array.data[1]
+      value: namespace
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[7].Answers.Array.data[2]
+      value: class
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555480715318224355, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0,
+        type: 3}
+      propertyPath: QnA.Array.data[7].Answers.Array.data[3]
+      value: fonksiyon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d1f2980d9f60c54bbb0254f48c4f0c0, type: 3}
 --- !u!1001 &9124476285338962411
@@ -1470,7 +1674,7 @@ PrefabInstance:
     - target: {fileID: 9124476287334557082, guid: a5a317ee8beaad44685bd2218b5e33dd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.880005
+      value: -3.8800354
       objectReference: {fileID: 0}
     - target: {fileID: 9124476287334557086, guid: a5a317ee8beaad44685bd2218b5e33dd,
         type: 3}
