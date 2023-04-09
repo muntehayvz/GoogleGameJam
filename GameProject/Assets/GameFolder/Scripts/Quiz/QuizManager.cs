@@ -15,6 +15,10 @@ public class QuizManager : MonoBehaviour
 
     public TMP_Text questionText;
 
+    public AudioSource source;
+    public AudioClip correctSound;
+    public AudioClip wrongSound;
+
     private void Start()
     {
         mainCamera = Camera.main;
@@ -43,13 +47,17 @@ public class QuizManager : MonoBehaviour
     public void Correct()
     {
         QnA.RemoveAt(currentQuestion);
+
+        source.PlayOneShot(correctSound);
         ScoreManager.Instance.IncreaseScore(scorePerWord);
+
         Invoke("GenerateQuestions", 2f);
        
     }
     public void Wrong()
     {
         //Trigger particle - cevap yanlýþ 
+        source.PlayOneShot(wrongSound);
         QnA.RemoveAt(currentQuestion);
         Invoke("GenerateQuestions", 2f);
     }

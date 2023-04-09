@@ -45,28 +45,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QnA:
-  - Question: "Seceneklerde verilen fonksiyonlar\u0131n hangisinin onceligi daha
-      fazlad\u0131r?"
+  - Question: Which of the functions given in the options has more priority?
     Answers:
     - Awake
     - Start
     - Update
     - FixedUpdate
     correctAnswer: 1
-  - Question: C# dilinde '&&' neyi ifade eder?
+  - Question: What does '&&' mean in C#?
     Answers:
-    - 'ya da '
-    - 'veya '
-    - ve
-    - ise
+    - or
+    - either
+    - and
+    - as
     correctAnswer: 3
-  - Question: "Se\xE7eneklerden hangi unity \u0131s\u0131k turlerinden biri degildir?"
+  - Question: Which of the options is not a unity light type?
     Answers:
     - Point Light
     - Area Light
     - Spot Light
     - Room Light
     correctAnswer: 4
+  - Question: Which render pipeline is better to use for low performance devices?
+    Answers:
+    - ASP
+    - URP
+    - HDRP
+    - UPR
+    correctAnswer: 2
+  - Question: Which value should be increased to increase the smoothness of the material?
+    Answers:
+    - Smoothness
+    - Tiling
+    - Opaque
+    - Metallic
+    correctAnswer: 1
+  - Question: What is the required keyword to call a function after a certain time?
+    Answers:
+    - protected
+    - void
+    - Invoke
+    - enum
+    correctAnswer: 3
+  - Question: Which of the codes in the options does not receive any input from the
+      keyboard?
+    Answers:
+    - Input.GetKey(space)
+    - Input.GetKeyDown(w)
+    - Input.GetTouch()
+    - Input.GetAxis("Horizontal")
+    correctAnswer: 3
+  - Question: What structures can't be inside classes?
+    Answers:
+    - variables
+    - namespace
+    - class
+    - function
+    correctAnswer: 2
   options:
   - {fileID: 0}
   - {fileID: 0}
@@ -75,3 +110,6 @@ MonoBehaviour:
   currentQuestion: 0
   mainCamera: {fileID: 0}
   questionText: {fileID: 0}
+  source: {fileID: 0}
+  correctSound: {fileID: 8300000, guid: 4bfed17bffc37364ea4510105f07803e, type: 3}
+  wrongSound: {fileID: 8300000, guid: 6693ae0e4567fe54b812835439c06403, type: 3}
