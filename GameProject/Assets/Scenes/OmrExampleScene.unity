@@ -7883,6 +7883,22 @@ PrefabInstance:
       propertyPath: quizManager
       value: 
       objectReference: {fileID: 437284256}
+    - target: {fileID: 9124476285563563790, guid: a5a317ee8beaad44685bd2218b5e33dd,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aee57b888e66d0f4092525f3b37d2e07,
+        type: 3}
+    - target: {fileID: 9124476285563563791, guid: a5a317ee8beaad44685bd2218b5e33dd,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124476285563563791, guid: a5a317ee8beaad44685bd2218b5e33dd,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 9124476285753689681, guid: a5a317ee8beaad44685bd2218b5e33dd,
         type: 3}
       propertyPath: quizManager
