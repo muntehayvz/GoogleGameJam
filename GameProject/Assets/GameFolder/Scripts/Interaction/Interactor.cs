@@ -14,6 +14,10 @@ public class Interactor : MonoBehaviour
 
     CameraZoom cameraZoom;
 
+    public AudioSource source;
+    public AudioClip pcSound;
+    public AudioClip tabletSound;
+
     void Start()
     {
         cameraZoom = FindObjectOfType<CameraZoom>();
@@ -35,11 +39,13 @@ public class Interactor : MonoBehaviour
                 {
                     _interactable.Interact(this);
                     cameraZoom.Zoom();
+                    source.PlayOneShot(pcSound);
                 }
                 if (Input.GetKeyDown(KeyCode.Q))
                 {
                     _interactable.Interact(this);
                     cameraZoom.TabletZoom();
+                    source.PlayOneShot(tabletSound);
                 }
             }
         }
