@@ -36,6 +36,11 @@ public class Interactor : MonoBehaviour
                     _interactable.Interact(this);
                     cameraZoom.Zoom();
                 }
+                if (Input.GetKeyDown(KeyCode.Q))
+                {
+                    _interactable.Interact(this);
+                    cameraZoom.TabletZoom();
+                }
             }
         }
         else

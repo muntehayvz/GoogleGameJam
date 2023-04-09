@@ -14,7 +14,8 @@ public static class Loader
         MainMenuScene,
         LoadingScene,
         SampleScene,
-        SecondScene
+        SecondScene,
+        OmrExampleScene
     }
     //private static Scene targetScene;
     private static Action onLoaderCallback;
